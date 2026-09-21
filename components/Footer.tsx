@@ -14,7 +14,7 @@ export default function Footer() {
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 4 }}>
             <Stack direction="row" spacing={1} alignItems="center" mb={1}>
-              <Logo/>
+              <Logo />
               <Typography fontWeight={900} fontSize={20}>تعمیرات لوازم گازی و برقی</Typography>
             </Stack>
             <Typography color="rgba(255,255,255,.65)" lineHeight={2}>تعمیر تخصصی تجهیزات آشپزخانه با تکنسین مجرب و ضمانت خدمات.</Typography>
@@ -37,7 +37,30 @@ export default function Footer() {
           <Grid size={{ xs: 12, sm: 4, md: 2.6 }}>
             <Stack direction="row" spacing={1.5}>
               <LocalPhoneIcon sx={{ color: "secondary.main" }} />
-              <Box><Typography fontWeight={800}>تماس با ما</Typography><Typography component="a" href="tel: 09124676047" variant="body2" color="#fff" mt={.5}>09124676047</Typography></Box>
+              <Box >
+                <Typography fontWeight={800}>تماس با ما</Typography>
+                <Stack>
+
+                  <Typography
+                    component="a"
+                    href="tel: 09124676047"
+                    variant="body2"
+                    color="#fff"
+                    mt={1}>
+                    09124676047
+                  </Typography>
+                </Stack>
+                <Stack>
+                  <Typography
+                    component="a"
+                    href="tel: 09124676047"
+                    variant="body2"
+                    color="#fff"
+                    mt={1}>
+                    09354676047
+                  </Typography>
+                </Stack>
+              </Box>
             </Stack>
           </Grid>
         </Grid>
@@ -45,7 +68,7 @@ export default function Footer() {
         <Divider sx={{ borderColor: "rgba(255,255,255,.12)", my: 4 }} />
 
         <Stack direction={{ xs: "column", sm: "row" }} justifyContent="space-between" alignItems={{ xs: "flex-start", sm: "center" }} gap={2}>
-          <Stack direction="row" spacing={1}>
+          <Stack direction="row" spacing={1} alignItems="center">
             <a href="https://wa.me/09124676047?text=سلام وقتتون بخیر" target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon />
             </a>
@@ -57,12 +80,16 @@ export default function Footer() {
               <img
                 src="/rubika2.png"
                 alt="Rubika"
-                style={{ width: 60, height: 28 }}
+                style={{ width: 60, height: 32 }}
               />
             </a>
 
           </Stack>
-          <Typography variant="caption" color="rgba(255,255,255,.55)">1405 ©تمامی اطلاعات برای کارن سرویس محفوض است </Typography>
+          <Typography
+            variant="caption"
+            color="rgba(255,255,255,.55)">
+            1405 ©تمامی اطلاعات برای کارن سرویس محفوض است
+          </Typography>
         </Stack>
       </Container>
     </Box>

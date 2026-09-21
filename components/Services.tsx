@@ -58,6 +58,7 @@ const services = [
     desc: "تعمیر برد، پمپ، سنسورها، سرویس کامل و رفع ارورهای پکیج",
     icon: <img src="/package.jpg" style={{ width: 120, height: 120 }} />
   },
+  { title: "سرویس و نگهداری", desc: "سرویس دوره‌ای برای افزایش عمر دستگاه", icon: <BuildIcon /> },
 
 ];
 
