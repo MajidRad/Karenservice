@@ -1,18 +1,106 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Providers } from "./providers";
+import "./globals.css";
+import { Vazirmatn } from "next/font/google";
+import LocalBusinessSchema from "../components/LocalBusinessSchema";
 
-export const metadata: Metadata = {
-  title: "تعمیرات فر و گاز | تعمیرکار حرفه‌ای",
-  description: "تعمیر تخصصی فر، اجاق گاز، مایکروویو و هود با اعزام سریع تکنسین.",
-};
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+  display: "swap",
+});
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="fa" dir="rtl">
-      <body>
-        <Providers>{children}</Providers>
+      <body className={vazirmatn.className}>
+        <Providers>
+          <LocalBusinessSchema/>
+          {children}
+          </Providers>
       </body>
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://karenservice.ir"),
+
+  title: {
+    default: "تعمیرات لوازم خانگی | تعمیر فر، اجاق گاز، لباسشویی و ظرفشویی",
+    template: "%s | تعمیرات لوازم خانگی",
+  },
+
+  description:
+    "تعمیر تخصصی فر، اجاق گاز، لباسشویی، ظرفشویی، مایکروویو، هود، آبگرمکن و پکیج با تکنسین مجرب و خدمات سریع.",
+
+  keywords: [
+    "تعمیر فر",
+    "تعمیر اجاق گاز",
+    "تعمیر لباسشویی",
+    "تعمیر ظرفشویی",
+    "تعمیر مایکروویو",
+    "تعمیر هود",
+    "تعمیر آبگرمکن",
+    "تعمیر پکیج",
+    "تعمیر لوازم خانگی",
+  ],
+
+  authors: [
+    {
+      name: "کارن سرویس",
+    },
+  ],
+
+  creator: "کارن سرویس",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "fa_IR",
+    url: "https://karenservice.ir",
+    siteName: "تعمیرات لوازم خانگی",
+    title: "تعمیرات تخصصی لوازم خانگی",
+    description:
+      "تعمیر تخصصی فر، اجاق گاز، لباسشویی، ظرفشویی، مایکروویو و سایر لوازم خانگی.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "تعمیرات تخصصی لوازم خانگی",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "تعمیرات تخصصی لوازم خانگی",
+    description:
+      "تعمیر فر، اجاق گاز، لباسشویی، ظرفشویی و سایر لوازم خانگی.",
+    images: ["/og-image.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
