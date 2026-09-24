@@ -13,40 +13,46 @@ export default function Hero() {
               color: "#811414",
               fontWeight: 800,
               mb: 1.5
-            }} variant="h5">
-            تعمیرات تخصصی
+            }}
+            component="h1"
+            variant="h5">
+            تعمیرات تخصصی لوازم گازسوز و برقی
           </Typography>
           <Typography variant="h1" sx={{ fontSize: { xs: 46, sm: 62, md: 72 }, lineHeight: 1.05, mb: 2 }}>
 
           </Typography>
-          <Typography sx={{
-            color: "rgba(255, 255, 255, 0.9)",
-            fontSize: { xs: 21, md: 26 },
-            fontWeight: 800,
-            lineHeight: 1.7,
-            textShadow:5,
-            mb: 2
-          }}>
+          <Typography
+            component="p"
+            sx={{
+              color: "rgba(255, 255, 255, 0.9)",
+              fontSize: { xs: 21, md: 26 },
+              fontWeight: 800,
+              lineHeight: 1.7,
+              textShadow: 5,
+              mb: 2
+            }}>
             با خیال راحت آشپزخانه‌تان را به ما بسپارید
           </Typography>
           <Typography sx={{
             color: "rgba(255,255,255,.9)",
             maxWidth: 570,
             lineHeight: 2,
-            textShadow:5,
+            textShadow: 5,
             mb: 3
-          }}>
+          }}
+            component="p"
+          >
             تعمیرات انواع اجاق گاز، فر، مایکروویو و هود توسط تکنسین‌های مجرب با استفاده از قطعات اصلی.
           </Typography>
 
           <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5} mb={3}>
-            <Button 
-            variant="contained"
-             color="secondary" 
-             size="large" 
-             href="tel:09124676047" 
-             startIcon={<LocalPhoneIcon />}
-             >
+            <Button
+              variant="contained"
+              color="secondary"
+              size="large"
+              href="tel:09124676047"
+              startIcon={<LocalPhoneIcon />}
+            >
               درخواست تعمیر فوری
             </Button>
             <Button variant="outlined" size="large" href="#services" endIcon={<ArrowBackIcon />}
