@@ -96,7 +96,7 @@ export default function Services() {
 
                   <Typography fontWeight={900} mb={1}>{s.title}</Typography>
                   <Typography variant="body2" color="text.secondary" lineHeight={1.9} minHeight={55}>{s.desc}</Typography>
-                  <Stack direction="row" component='a' href="tel:09123456789"  spacing={.5} alignItems="center" sx={{ mt: 2, color: "primary.main" }}>
+                  <Stack direction="row" component='a' href="tel:09124676047"  spacing={.5} alignItems="center" sx={{ mt: 2, color: "primary.main" }}>
                     <Typography    variant="body2" fontWeight={800}>سفارش</Typography>
                     <ArrowBackIcon fontSize="small" />
                   </Stack>
