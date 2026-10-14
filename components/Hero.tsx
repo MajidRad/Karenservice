@@ -10,10 +10,10 @@ export default function Hero() {
         <Box sx={{ maxWidth: 620, py: { xs: 7, md: 9 } }}>
           <Typography
             sx={{
-              color: "#811414",
               fontWeight: 800,
               mb: 1.5
             }}
+            color="secondary"
             component="h1"
             variant="h5">
             تعمیرات تخصصی لوازم گازسوز و برقی
@@ -53,7 +53,7 @@ export default function Hero() {
               href="tel:09124676047"
               startIcon={<LocalPhoneIcon />}
             >
-              درخواست تعمیر فوری
+              درخواست تعمیر فوری(کلیک کنید)
             </Button>
             <Button variant="outlined" size="large" href="#services" endIcon={<ArrowBackIcon />}
               sx={{ color: "#fff", borderColor: "rgba(255,255,255,.65)", "&:hover": { borderColor: "#fff" } }}>

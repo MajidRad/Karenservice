@@ -1,20 +1,17 @@
 import BuildIcon from "@mui/icons-material/Build";
-import MicrowaveIcon from "@mui/icons-material/Microwave";
-import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
-import AirIcon from "@mui/icons-material/Air";
-import ElectricalServicesIcon from "@mui/icons-material/ElectricalServices";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
 import { Box, Card, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import SectionTitle from "./SectionTitle";
 
 const services = [
   {
-    title: "تعمیر اجاق گاز",
+    title: "تعمیر اجاق گاز رومیزی",
     desc: "رفع نشتی، تنظیم شعله و مشکلات فنی",
     icon: <img src="/CountertopStove.jpg" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
   },
   {
-    title: "تعمیر فر گازی و برقی ",
+    title: "تعمیر گاز مبله",
     desc: "تعمیر انواع ترموکوپل، المنت و برد",
     icon: <img src="/oven1.jpg" style={{ width: 100, height: 100 }} />
 
@@ -44,7 +41,7 @@ const services = [
     icon: <img src="/hood1.jpg" style={{ width: 140, height: 140 }} />
   },
   {
-    title: "تعمیر تلویزیون",
+    title: "تعمیر تلویزیون LED,LCD",
     desc: "تعمیر برد تصویر، پنل، بک‌لایت و مشکلات روشن نشدن",
     icon: <img src="/tv.jpg" style={{ width: 120, height: 80 }} />
   },
@@ -99,8 +96,8 @@ export default function Services() {
 
                   <Typography fontWeight={900} mb={1}>{s.title}</Typography>
                   <Typography variant="body2" color="text.secondary" lineHeight={1.9} minHeight={55}>{s.desc}</Typography>
-                  <Stack direction="row" spacing={.5} alignItems="center" sx={{ mt: 2, color: "primary.main" }}>
-                    <Typography variant="body2" fontWeight={800}>اطلاعات بیشتر</Typography>
+                  <Stack direction="row" component='a' href="tel:09123456789"  spacing={.5} alignItems="center" sx={{ mt: 2, color: "primary.main" }}>
+                    <Typography    variant="body2" fontWeight={800}>سفارش</Typography>
                     <ArrowBackIcon fontSize="small" />
                   </Stack>
                 </CardContent>

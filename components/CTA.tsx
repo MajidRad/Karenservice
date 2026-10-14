@@ -1,6 +1,5 @@
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import WhatshotIcon from "@mui/icons-material/Whatshot";
-import { Box, Button, Container, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Logo from "./Logo";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 export default function CTA() {
@@ -15,13 +14,31 @@ export default function CTA() {
               <Typography sx={{ color: "rgba(255,255,255,.72)", mt: 1 }}>همین حالا درخواست خود را ثبت کنید تا در کوتاه‌ترین زمان با شما تماس بگیریم.</Typography>
             </Box>
           </Stack>
-          <Stack direction='row' alignItems="center" spacing={2}>
-
-            <Button href="tel:09124676047" variant="contained" color="secondary" size="large" startIcon={<LocalPhoneIcon />} sx={{ flexShrink: 0 }}>
+          <Stack
+            direction={{ xs: "column", sm: "column", md: "row" }}
+            alignItems="stretch"
+            spacing={2}
+            sx={{ width: { xs: "100%", sm: "100%", md: "auto" } }}
+          >
+            <Button
+              href="tel:09124676047"
+              variant="contained"
+              color="secondary"
+              size="large"
+              startIcon={<LocalPhoneIcon />}
+              sx={{ flexShrink: 0, width: { xs: "100%", sm: "100%", md: "auto" } }}>
               درخواست تعمیرکار
             </Button>
-            <a href="https://wa.me/09124676047?text=سلام وقتتون بخیر" target="_blank" rel="noopener noreferrer">
-              <Button  variant="contained" color="secondary" size="large" startIcon={<WhatsAppIcon />} sx={{ flexShrink: 0 }}>
+            <a
+              href="https://wa.me/09124676047?text=سلام وقتتون بخیر"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                startIcon={<WhatsAppIcon />}
+                sx={{ flexShrink: 0, width: { xs: "100%", sm: "100%", md: "auto" } }} >
                 WhatsApp
               </Button >
 

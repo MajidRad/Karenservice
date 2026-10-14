@@ -29,7 +29,7 @@ export default function Header() {
             </Box>
             <Box>
               <Typography fontWeight={900} lineHeight={1.1}>
-                تعمیرات فر و گاز
+                تعمیرات تخصصی لوازم خانگی
               </Typography>
               <Typography variant="caption" color="text.secondary">
                 سریع · مطمئن · حرفه‌ای
