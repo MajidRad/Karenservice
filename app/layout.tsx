@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import "./globals.css";
 import { Vazirmatn } from "next/font/google";
 import LocalBusinessSchema from "../components/LocalBusinessSchema";
 
@@ -77,10 +77,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fa_IR",
     url: "https://karenservice.ir",
-    siteName: "تعمیرات لوازم خانگی",
-    title: "تعمیرات تخصصی لوازم خانگی",
+    siteName: "کارن سرویس",
+    title: "تعمیر فر و اجاق گاز در کرج | کارن سرویس",
     description:
-      "تعمیر تخصصی فر، اجاق گاز، لباسشویی، ظرفشویی، مایکروویو و سایر لوازم خانگی.",
+      "تعمیر تخصصی فر، اجاق گاز، لباسشویی، ظرفشویی، مایکروویو و سایر لوازم خانگی  در کرج و حومه البرز",
     images: [
       {
         url: "/og-image.jpg",
@@ -99,8 +99,5 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
 
-  // icons: {
-  //   icon: "/favicon.ico",
-  // },
 };
 
